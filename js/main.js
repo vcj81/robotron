@@ -46,7 +46,7 @@ function manipulaDados(operacao, controle) {
     const peca = controle.querySelector("[data-contador]")
 
     if(operacao === "-") {
-        peca.value = parseInd(peca.value) - 1
+        peca.value = parseInt(peca.value) - 1
     } else {
         peca.value = parseInt(peca.value) + 1
     }
@@ -57,3 +57,7 @@ function atualizaEstatistica(peca) {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }

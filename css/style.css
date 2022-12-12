@@ -209,6 +209,19 @@ main {
     margin: 10px 0 0;
 }
 
+/****************************** Alterar Cores *****/
+.alterar {
+    margin: 2px;
+    width: 100px;
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
+}
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
